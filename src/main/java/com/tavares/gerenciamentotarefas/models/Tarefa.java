@@ -8,7 +8,7 @@ import java.time.LocalDate;
 @Table(name="tb_tarefa")
 public class Tarefa {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id;
 
     @Column(name="descricao_tarefa")
